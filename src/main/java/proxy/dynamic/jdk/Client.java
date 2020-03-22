@@ -1,4 +1,4 @@
-package proxy.dynamic;
+package proxy.dynamic.jdk;
 
 import proxy.static1.UserService;
 import proxy.static1.UserServiceImpl;
