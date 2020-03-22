@@ -2,7 +2,7 @@ package factory.method;
 
 import factory.simple.Mobile;
 
-public class Main {
+public class Client {
     public static void main(String[] args) {
         Mobile mobile1 = new IPhoneMobileFactory().getMobile();
         Mobile mobile2 = new HuaWeiMobileFactory().getMobile();
