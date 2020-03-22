@@ -29,7 +29,7 @@ public class Singleton6 {
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         // 反射破坏单例
         System.out.println(Singleton6.getInstance());
-        Constructor<Singleton6> constructor = Singleton6.class.getDeclaredConstructor(null);
+        Constructor<Singleton6> constructor = Singleton6.class.getDeclaredConstructor();
         constructor.setAccessible(true);
         System.out.println(constructor.newInstance());
     }
