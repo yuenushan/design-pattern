@@ -16,7 +16,7 @@ package singleton;
  */
 public class Singleton5 {
 
-    private static volatile Singleton5 instance;
+    private static  Singleton5 instance;
 
     private Singleton5() {
 

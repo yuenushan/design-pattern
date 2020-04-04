@@ -6,7 +6,7 @@ import java.io.*;
  * 如果类是可序列化的，怎么防止通过序列化破坏单例
  */
 public class Singleton2 implements Serializable {
-    public static Singleton2 instance = new Singleton2();
+    private static final Singleton2 instance = new Singleton2();
 
     private Singleton2() {
         System.out.println("constructor call...");
@@ -16,7 +16,7 @@ public class Singleton2 implements Serializable {
         return instance;
     }
 
-    private Object readResolve() {
+    protected Object readResolve() {
         return instance;
     }
 
